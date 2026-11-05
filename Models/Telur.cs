@@ -22,5 +22,17 @@ namespace SiMewah.Models
             JumlahTelur = jumlahTelur;
             IdPerkawinan = idPerkawinan;
         }
+
+        public Telur(
+            Guid idTelur,
+            DateOnly tanggalTelur,
+            int jumlahTelur,
+            Guid idPerkawinan)
+        {
+            IdTelur = idTelur;
+            TanggalTelur = tanggalTelur;
+            JumlahTelur = jumlahTelur;
+            IdPerkawinan = idPerkawinan;
+        }
     }
 }

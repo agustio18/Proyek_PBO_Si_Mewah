@@ -1,4 +1,4 @@
-namespace SiMewah.Repositories.Interfaces
+namespace SiMewah.Repositories
 {
     public interface IRepository<T>
     {
@@ -8,3 +8,7 @@ namespace SiMewah.Repositories.Interfaces
         List<T> GetAll();
     }
 }
+
+
+
+

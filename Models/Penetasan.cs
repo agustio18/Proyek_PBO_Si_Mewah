@@ -24,5 +24,18 @@ namespace SiMewah.Models
             JumlahGagal = jumlahGagal;
             IdTelur = idTelur;
         }
+        public Penetasan(
+            Guid idPenetasan,
+            DateOnly tanggalPencatatan,
+            int jumlahMenetas,
+            int jumlahGagal,
+            Guid idTelur)
+        {
+            IdPenetasan = idPenetasan;
+            TanggalPencatatan = tanggalPencatatan;
+            JumlahMenetas = jumlahMenetas;
+            JumlahGagal = jumlahGagal;
+            IdTelur = idTelur;
+        }
     }
 }

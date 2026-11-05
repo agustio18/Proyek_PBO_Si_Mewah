@@ -22,5 +22,16 @@ namespace SiMewah.Models
             IdBurungJantan = idBurungJantan;
             IdBurungBetina = idBurungBetina;
         }
+        public Perkawinan(
+        Guid idPerkawinan,
+        DateOnly tanggalPerkawinan,
+        Guid idBurungJantan,
+        Guid idBurungBetina)
+        {
+            IdPerkawinan = idPerkawinan;
+            TanggalPerkawinan = tanggalPerkawinan;
+            IdBurungJantan = idBurungJantan;
+            IdBurungBetina = idBurungBetina;
+        }
     }
 }
