@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 
 
-namespace Perkawinan.Models
+namespace SiMewah.Models
 {
     public class Perkawinan
     {

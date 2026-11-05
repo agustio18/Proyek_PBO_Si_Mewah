@@ -1,9 +1,5 @@
 using System;
-<<<<<<< HEAD
-namespace Perawatan.Models
-=======
-namespace Proyek_PBO___Si_Mewah.Models
->>>>>>> 9207717e258d669419fe59ac6bfcc8545955386c
+namespace SiMewah.Models
 {
     public class Perawatan
     {

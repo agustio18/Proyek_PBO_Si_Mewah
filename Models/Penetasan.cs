@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Penetasan.Models
+namespace SiMewah.Models
 {
     public class Penetasan
     {

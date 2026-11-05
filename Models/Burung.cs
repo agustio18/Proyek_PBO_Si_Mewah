@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Burung.Models
+namespace SiMewah.Models
 {
     public class Burung
     {
