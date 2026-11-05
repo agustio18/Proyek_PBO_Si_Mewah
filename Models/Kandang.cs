@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Proyek_PBO___Si_Mewah.Models
+namespace Kandang.Models
 {
     public class Kandang
     {
