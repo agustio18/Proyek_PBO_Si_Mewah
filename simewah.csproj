@@ -12,8 +12,14 @@
   <ItemGroup>
     <Folder Include="Controllers\" />
     <Folder Include="Data\" />
-    <Folder Include="Views\" />
-    <Folder Include="Repository\" />
+    <Folder Include="Helpers\" />
+    <Folder Include="Repositories\Interfaces\" />
+    <Folder Include="Resources\" />
+    <Folder Include="Views\Auth\" />
+    <Folder Include="Views\Burung\" />
+    <Folder Include="Views\Kandang\" />
+    <Folder Include="Views\Perawatan\" />
+    <Folder Include="Views\Produksi\" />
   </ItemGroup>
 
 </Project>
