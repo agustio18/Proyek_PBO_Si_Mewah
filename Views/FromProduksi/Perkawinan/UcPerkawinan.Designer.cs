@@ -1,4 +1,4 @@
-﻿namespace Proyek_PBO___Si_Mewah.Views.FromProduksi.Perkawinan
+﻿namespace SiMewah.Views.Produksi.Perkawinan
 {
     partial class UcPerkawinan
     {
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            lbl_perkawinan = new Label();
+            lbl_judul = new Label();
             lbl_pencarian = new Label();
             tb_pencarian = new TextBox();
             btn_pencarian = new Button();
@@ -42,17 +42,17 @@
             ((System.ComponentModel.ISupportInitialize)dg_perkawinan).BeginInit();
             SuspendLayout();
             // 
-            // lbl_perkawinan
+            // lbl_judul
             // 
-            lbl_perkawinan.AutoSize = true;
-            lbl_perkawinan.Dock = DockStyle.Top;
-            lbl_perkawinan.Font = new Font("Microsoft Sans Serif", 13.2F, FontStyle.Bold);
-            lbl_perkawinan.Location = new Point(0, 0);
-            lbl_perkawinan.Name = "lbl_perkawinan";
-            lbl_perkawinan.Size = new Size(193, 26);
-            lbl_perkawinan.TabIndex = 0;
-            lbl_perkawinan.Text = "Data Perkawinan";
-            lbl_perkawinan.Click += label1_Click;
+            lbl_judul.AutoSize = true;
+            lbl_judul.Dock = DockStyle.Top;
+            lbl_judul.Font = new Font("Microsoft Sans Serif", 13.2F, FontStyle.Bold);
+            lbl_judul.Location = new Point(0, 0);
+            lbl_judul.Name = "lbl_judul";
+            lbl_judul.Size = new Size(193, 26);
+            lbl_judul.TabIndex = 0;
+            lbl_judul.Text = "Data Perkawinan";
+            lbl_judul.Click += label1_Click;
             // 
             // lbl_pencarian
             // 
@@ -160,7 +160,7 @@
             Controls.Add(btn_pencarian);
             Controls.Add(tb_pencarian);
             Controls.Add(lbl_pencarian);
-            Controls.Add(lbl_perkawinan);
+            Controls.Add(lbl_judul);
             MaximumSize = new Size(1200, 750);
             MinimumSize = new Size(1000, 650);
             Name = "UcPerkawinan";
@@ -172,7 +172,7 @@
 
         #endregion
 
-        private Label lbl_perkawinan;
+        private Label lbl_judul;
         private Label lbl_pencarian;
         private TextBox tb_pencarian;
         private Button btn_pencarian;

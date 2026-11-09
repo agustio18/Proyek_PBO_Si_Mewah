@@ -1,4 +1,4 @@
-﻿namespace Proyek_PBO___Si_Mewah.Views.FromProduksi.Perkawinan
+﻿namespace SiMewah.Views.Produksi.Perkawinan
 {
     partial class FormPerkawinan
     {
@@ -35,8 +35,8 @@
             lbl_betina = new Label();
             cmb_jantan = new ComboBox();
             cmb_betina = new ComboBox();
-            button1 = new Button();
-            button2 = new Button();
+            btn_simpan = new Button();
+            btn_batal = new Button();
             SuspendLayout();
             // 
             // lbl_judul
@@ -64,6 +64,7 @@
             // 
             // dtp_tanggal
             // 
+            dtp_tanggal.CalendarFont = new Font("Lucida Fax", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             dtp_tanggal.Location = new Point(21, 100);
             dtp_tanggal.Margin = new Padding(4, 3, 4, 3);
             dtp_tanggal.Name = "dtp_tanggal";
@@ -110,27 +111,27 @@
             cmb_betina.Size = new Size(206, 28);
             cmb_betina.TabIndex = 7;
             // 
-            // button1
+            // btn_simpan
             // 
-            button1.Font = new Font("Lucida Fax", 10.2F, FontStyle.Bold);
-            button1.Location = new Point(860, 520);
-            button1.Margin = new Padding(4, 3, 4, 3);
-            button1.Name = "button1";
-            button1.Size = new Size(129, 29);
-            button1.TabIndex = 8;
-            button1.Text = "Simpan";
-            button1.UseVisualStyleBackColor = true;
+            btn_simpan.Font = new Font("Lucida Fax", 10.2F, FontStyle.Bold);
+            btn_simpan.Location = new Point(860, 520);
+            btn_simpan.Margin = new Padding(4, 3, 4, 3);
+            btn_simpan.Name = "btn_simpan";
+            btn_simpan.Size = new Size(129, 29);
+            btn_simpan.TabIndex = 8;
+            btn_simpan.Text = "Simpan";
+            btn_simpan.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // btn_batal
             // 
-            button2.Font = new Font("Lucida Fax", 10.2F, FontStyle.Bold);
-            button2.Location = new Point(1010, 520);
-            button2.Margin = new Padding(4, 3, 4, 3);
-            button2.Name = "button2";
-            button2.Size = new Size(129, 29);
-            button2.TabIndex = 9;
-            button2.Text = "Batal";
-            button2.UseVisualStyleBackColor = true;
+            btn_batal.Font = new Font("Lucida Fax", 10.2F, FontStyle.Bold);
+            btn_batal.Location = new Point(1010, 520);
+            btn_batal.Margin = new Padding(4, 3, 4, 3);
+            btn_batal.Name = "btn_batal";
+            btn_batal.Size = new Size(129, 29);
+            btn_batal.TabIndex = 9;
+            btn_batal.Text = "Batal";
+            btn_batal.UseVisualStyleBackColor = true;
             // 
             // FormPerkawinan
             // 
@@ -138,8 +139,8 @@
             AutoScaleMode = AutoScaleMode.Font;
             AutoSize = true;
             ClientSize = new Size(1350, 603);
-            Controls.Add(button2);
-            Controls.Add(button1);
+            Controls.Add(btn_batal);
+            Controls.Add(btn_simpan);
             Controls.Add(cmb_betina);
             Controls.Add(cmb_jantan);
             Controls.Add(lbl_betina);
@@ -166,7 +167,7 @@
         private Label lbl_betina;
         private ComboBox cmb_jantan;
         private ComboBox cmb_betina;
-        private Button button1;
-        private Button button2;
+        private Button btn_simpan;
+        private Button btn_batal;
     }
 }
