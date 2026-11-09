@@ -10,15 +10,30 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Helpers\**" />
+    <Compile Remove="Views\Auth\**" />
+    <Compile Remove="Views\Burung\**" />
+    <Compile Remove="Views\Kandang\**" />
+    <Compile Remove="Views\Perawatan\**" />
+    <Compile Remove="Views\Produksi\**" />
+    <EmbeddedResource Remove="Helpers\**" />
+    <EmbeddedResource Remove="Views\Auth\**" />
+    <EmbeddedResource Remove="Views\Burung\**" />
+    <EmbeddedResource Remove="Views\Kandang\**" />
+    <EmbeddedResource Remove="Views\Perawatan\**" />
+    <EmbeddedResource Remove="Views\Produksi\**" />
+    <None Remove="Helpers\**" />
+    <None Remove="Views\Auth\**" />
+    <None Remove="Views\Burung\**" />
+    <None Remove="Views\Kandang\**" />
+    <None Remove="Views\Perawatan\**" />
+    <None Remove="Views\Produksi\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="Data\" />
-    <Folder Include="Helpers\" />
     <Folder Include="Repositories\Interfaces\" />
     <Folder Include="Resources\" />
-    <Folder Include="Views\Auth\" />
-    <Folder Include="Views\Burung\" />
-    <Folder Include="Views\Kandang\" />
-    <Folder Include="Views\Perawatan\" />
-    <Folder Include="Views\Produksi\" />
   </ItemGroup>
 
   <ItemGroup>
