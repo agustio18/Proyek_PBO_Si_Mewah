@@ -33,175 +33,190 @@ namespace SiMewah.Views.Produksi.Penetasan
 
         private void InitializeComponent()
         {
-            this.lblJudul = new System.Windows.Forms.Label();
-            this.lblTelur = new System.Windows.Forms.Label();
-            this.cmbTelur = new System.Windows.Forms.ComboBox();
-            this.lblTotalTelur = new System.Windows.Forms.Label();
-            this.txtTotalTelur = new System.Windows.Forms.TextBox();
-            this.lblTanggal = new System.Windows.Forms.Label();
-            this.dtpTanggal = new System.Windows.Forms.DateTimePicker();
-            this.lblMenetas = new System.Windows.Forms.Label();
-            this.numMenetas = new System.Windows.Forms.NumericUpDown();
-            this.lblGagal = new System.Windows.Forms.Label();
-            this.numGagal = new System.Windows.Forms.NumericUpDown();
-            this.lblStatus = new System.Windows.Forms.Label();
-            this.txtStatus = new System.Windows.Forms.TextBox();
-            this.btnSimpan = new System.Windows.Forms.Button();
-            this.btnBatal = new System.Windows.Forms.Button();
-
-            ((System.ComponentModel.ISupportInitialize)(this.numMenetas)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numGagal)).BeginInit();
-            this.SuspendLayout();
-
+            lblJudul = new Label();
+            lblTelur = new Label();
+            cmbTelur = new ComboBox();
+            lblTotalTelur = new Label();
+            txtTotalTelur = new TextBox();
+            lblTanggal = new Label();
+            dtpTanggal = new DateTimePicker();
+            lblMenetas = new Label();
+            numMenetas = new NumericUpDown();
+            lblGagal = new Label();
+            numGagal = new NumericUpDown();
+            lblStatus = new Label();
+            txtStatus = new TextBox();
+            btnSimpan = new Button();
+            btnBatal = new Button();
+            ((System.ComponentModel.ISupportInitialize)numMenetas).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)numGagal).BeginInit();
+            SuspendLayout();
+            // 
             // lblJudul
-            this.lblJudul.AutoSize = true;
-            this.lblJudul.Font = new System.Drawing.Font(
-                "Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.lblJudul.Location = new System.Drawing.Point(25, 20);
-            this.lblJudul.Name = "lblJudul";
-            this.lblJudul.Size = new System.Drawing.Size(140, 21);
-            this.lblJudul.TabIndex = 0;
-            this.lblJudul.Text = "Form Penetasan";
-
+            // 
+            lblJudul.AutoSize = true;
+            lblJudul.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
+            lblJudul.Location = new Point(29, 27);
+            lblJudul.Name = "lblJudul";
+            lblJudul.Size = new Size(162, 28);
+            lblJudul.TabIndex = 0;
+            lblJudul.Text = "Form Penetasan";
+            // 
             // lblTelur
-            this.lblTelur.AutoSize = true;
-            this.lblTelur.Location = new System.Drawing.Point(25, 65);
-            this.lblTelur.Name = "lblTelur";
-            this.lblTelur.Size = new System.Drawing.Size(60, 15);
-            this.lblTelur.TabIndex = 1;
-            this.lblTelur.Text = "Kelompok Telur";
-
+            // 
+            lblTelur.AutoSize = true;
+            lblTelur.Location = new Point(29, 87);
+            lblTelur.Name = "lblTelur";
+            lblTelur.Size = new Size(113, 20);
+            lblTelur.TabIndex = 1;
+            lblTelur.Text = "Kelompok Telur";
+            // 
             // cmbTelur
-            this.cmbTelur.DropDownStyle =
-                System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbTelur.FormattingEnabled = true;
-            this.cmbTelur.Location = new System.Drawing.Point(25, 85);
-            this.cmbTelur.Name = "cmbTelur";
-            this.cmbTelur.Size = new System.Drawing.Size(380, 23);
-            this.cmbTelur.TabIndex = 2;
-
+            // 
+            cmbTelur.DropDownStyle = ComboBoxStyle.DropDownList;
+            cmbTelur.FormattingEnabled = true;
+            cmbTelur.Location = new Point(29, 113);
+            cmbTelur.Margin = new Padding(3, 4, 3, 4);
+            cmbTelur.Name = "cmbTelur";
+            cmbTelur.Size = new Size(434, 28);
+            cmbTelur.TabIndex = 2;
+            // 
             // lblTotalTelur
-            this.lblTotalTelur.AutoSize = true;
-            this.lblTotalTelur.Location = new System.Drawing.Point(25, 125);
-            this.lblTotalTelur.Name = "lblTotalTelur";
-            this.lblTotalTelur.Size = new System.Drawing.Size(75, 15);
-            this.lblTotalTelur.TabIndex = 3;
-            this.lblTotalTelur.Text = "Jumlah Telur";
-
+            // 
+            lblTotalTelur.AutoSize = true;
+            lblTotalTelur.Location = new Point(29, 167);
+            lblTotalTelur.Name = "lblTotalTelur";
+            lblTotalTelur.Size = new Size(91, 20);
+            lblTotalTelur.TabIndex = 3;
+            lblTotalTelur.Text = "Jumlah Telur";
+            // 
             // txtTotalTelur
-            this.txtTotalTelur.Location = new System.Drawing.Point(25, 145);
-            this.txtTotalTelur.Name = "txtTotalTelur";
-            this.txtTotalTelur.ReadOnly = true;
-            this.txtTotalTelur.Size = new System.Drawing.Size(380, 23);
-            this.txtTotalTelur.TabIndex = 4;
-
+            // 
+            txtTotalTelur.Location = new Point(29, 193);
+            txtTotalTelur.Margin = new Padding(3, 4, 3, 4);
+            txtTotalTelur.Name = "txtTotalTelur";
+            txtTotalTelur.ReadOnly = true;
+            txtTotalTelur.Size = new Size(434, 27);
+            txtTotalTelur.TabIndex = 4;
+            // 
             // lblTanggal
-            this.lblTanggal.AutoSize = true;
-            this.lblTanggal.Location = new System.Drawing.Point(25, 185);
-            this.lblTanggal.Name = "lblTanggal";
-            this.lblTanggal.Size = new System.Drawing.Size(110, 15);
-            this.lblTanggal.TabIndex = 5;
-            this.lblTanggal.Text = "Tanggal Pencatatan";
-
+            // 
+            lblTanggal.AutoSize = true;
+            lblTanggal.Location = new Point(29, 247);
+            lblTanggal.Name = "lblTanggal";
+            lblTanggal.Size = new Size(137, 20);
+            lblTanggal.TabIndex = 5;
+            lblTanggal.Text = "Tanggal Pencatatan";
+            // 
             // dtpTanggal
-            this.dtpTanggal.Format =
-                System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpTanggal.Location = new System.Drawing.Point(25, 205);
-            this.dtpTanggal.Name = "dtpTanggal";
-            this.dtpTanggal.Size = new System.Drawing.Size(380, 23);
-            this.dtpTanggal.TabIndex = 6;
-
+            // 
+            dtpTanggal.Format = DateTimePickerFormat.Short;
+            dtpTanggal.Location = new Point(29, 273);
+            dtpTanggal.Margin = new Padding(3, 4, 3, 4);
+            dtpTanggal.Name = "dtpTanggal";
+            dtpTanggal.Size = new Size(434, 27);
+            dtpTanggal.TabIndex = 6;
+            // 
             // lblMenetas
-            this.lblMenetas.AutoSize = true;
-            this.lblMenetas.Location = new System.Drawing.Point(25, 245);
-            this.lblMenetas.Name = "lblMenetas";
-            this.lblMenetas.Size = new System.Drawing.Size(100, 15);
-            this.lblMenetas.TabIndex = 7;
-            this.lblMenetas.Text = "Jumlah Menetas";
-
+            // 
+            lblMenetas.AutoSize = true;
+            lblMenetas.Location = new Point(29, 327);
+            lblMenetas.Name = "lblMenetas";
+            lblMenetas.Size = new Size(115, 20);
+            lblMenetas.TabIndex = 7;
+            lblMenetas.Text = "Jumlah Menetas";
+            // 
             // numMenetas
-            this.numMenetas.Location = new System.Drawing.Point(25, 265);
-            this.numMenetas.Minimum = 0;
-            this.numMenetas.Maximum = 100;
-            this.numMenetas.Name = "numMenetas";
-            this.numMenetas.Size = new System.Drawing.Size(380, 23);
-            this.numMenetas.TabIndex = 8;
-
+            // 
+            numMenetas.Location = new Point(29, 353);
+            numMenetas.Margin = new Padding(3, 4, 3, 4);
+            numMenetas.Name = "numMenetas";
+            numMenetas.Size = new Size(434, 27);
+            numMenetas.TabIndex = 8;
+            // 
             // lblGagal
-            this.lblGagal.AutoSize = true;
-            this.lblGagal.Location = new System.Drawing.Point(25, 305);
-            this.lblGagal.Name = "lblGagal";
-            this.lblGagal.Size = new System.Drawing.Size(85, 15);
-            this.lblGagal.TabIndex = 9;
-            this.lblGagal.Text = "Jumlah Gagal";
-
+            // 
+            lblGagal.AutoSize = true;
+            lblGagal.Location = new Point(29, 407);
+            lblGagal.Name = "lblGagal";
+            lblGagal.Size = new Size(98, 20);
+            lblGagal.TabIndex = 9;
+            lblGagal.Text = "Jumlah Gagal";
+            // 
             // numGagal
-            this.numGagal.Location = new System.Drawing.Point(25, 325);
-            this.numGagal.Minimum = 0;
-            this.numGagal.Maximum = 100;
-            this.numGagal.Name = "numGagal";
-            this.numGagal.Size = new System.Drawing.Size(380, 23);
-            this.numGagal.TabIndex = 10;
-
+            // 
+            numGagal.Location = new Point(29, 433);
+            numGagal.Margin = new Padding(3, 4, 3, 4);
+            numGagal.Name = "numGagal";
+            numGagal.Size = new Size(434, 27);
+            numGagal.TabIndex = 10;
+            // 
             // lblStatus
-            this.lblStatus.AutoSize = true;
-            this.lblStatus.Location = new System.Drawing.Point(25, 365);
-            this.lblStatus.Name = "lblStatus";
-            this.lblStatus.Size = new System.Drawing.Size(40, 15);
-            this.lblStatus.TabIndex = 11;
-            this.lblStatus.Text = "Status";
-
+            // 
+            lblStatus.AutoSize = true;
+            lblStatus.Location = new Point(29, 487);
+            lblStatus.Name = "lblStatus";
+            lblStatus.Size = new Size(49, 20);
+            lblStatus.TabIndex = 11;
+            lblStatus.Text = "Status";
+            // 
             // txtStatus
-            this.txtStatus.Location = new System.Drawing.Point(25, 385);
-            this.txtStatus.Name = "txtStatus";
-            this.txtStatus.ReadOnly = true;
-            this.txtStatus.Size = new System.Drawing.Size(380, 23);
-            this.txtStatus.TabIndex = 12;
-
+            // 
+            txtStatus.Location = new Point(29, 513);
+            txtStatus.Margin = new Padding(3, 4, 3, 4);
+            txtStatus.Name = "txtStatus";
+            txtStatus.ReadOnly = true;
+            txtStatus.Size = new Size(434, 27);
+            txtStatus.TabIndex = 12;
+            // 
             // btnSimpan
-            this.btnSimpan.Location = new System.Drawing.Point(315, 435);
-            this.btnSimpan.Name = "btnSimpan";
-            this.btnSimpan.Size = new System.Drawing.Size(90, 30);
-            this.btnSimpan.TabIndex = 13;
-            this.btnSimpan.Text = "Simpan";
-            this.btnSimpan.UseVisualStyleBackColor = true;
-
+            // 
+            btnSimpan.Location = new Point(360, 580);
+            btnSimpan.Margin = new Padding(3, 4, 3, 4);
+            btnSimpan.Name = "btnSimpan";
+            btnSimpan.Size = new Size(103, 40);
+            btnSimpan.TabIndex = 13;
+            btnSimpan.Text = "Simpan";
+            btnSimpan.UseVisualStyleBackColor = true;
+            // 
             // btnBatal
-            this.btnBatal.Location = new System.Drawing.Point(215, 435);
-            this.btnBatal.Name = "btnBatal";
-            this.btnBatal.Size = new System.Drawing.Size(90, 30);
-            this.btnBatal.TabIndex = 14;
-            this.btnBatal.Text = "Batal";
-            this.btnBatal.UseVisualStyleBackColor = true;
-
+            // 
+            btnBatal.Location = new Point(246, 580);
+            btnBatal.Margin = new Padding(3, 4, 3, 4);
+            btnBatal.Name = "btnBatal";
+            btnBatal.Size = new Size(103, 40);
+            btnBatal.TabIndex = 14;
+            btnBatal.Text = "Batal";
+            btnBatal.UseVisualStyleBackColor = true;
+            // 
             // FormPenetasan
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(450, 490);
-            this.Controls.Add(this.lblJudul);
-            this.Controls.Add(this.lblTelur);
-            this.Controls.Add(this.cmbTelur);
-            this.Controls.Add(this.lblTotalTelur);
-            this.Controls.Add(this.txtTotalTelur);
-            this.Controls.Add(this.lblTanggal);
-            this.Controls.Add(this.dtpTanggal);
-            this.Controls.Add(this.lblMenetas);
-            this.Controls.Add(this.numMenetas);
-            this.Controls.Add(this.lblGagal);
-            this.Controls.Add(this.numGagal);
-            this.Controls.Add(this.lblStatus);
-            this.Controls.Add(this.txtStatus);
-            this.Controls.Add(this.btnSimpan);
-            this.Controls.Add(this.btnBatal);
-            this.Name = "FormPenetasan";
-            this.StartPosition =
-                System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Form Penetasan";
-
-            ((System.ComponentModel.ISupportInitialize)(this.numMenetas)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numGagal)).EndInit();
-            this.ResumeLayout(false);
-            this.PerformLayout();
+            // 
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(624, 653);
+            Controls.Add(lblJudul);
+            Controls.Add(lblTelur);
+            Controls.Add(cmbTelur);
+            Controls.Add(lblTotalTelur);
+            Controls.Add(txtTotalTelur);
+            Controls.Add(lblTanggal);
+            Controls.Add(dtpTanggal);
+            Controls.Add(lblMenetas);
+            Controls.Add(numMenetas);
+            Controls.Add(lblGagal);
+            Controls.Add(numGagal);
+            Controls.Add(lblStatus);
+            Controls.Add(txtStatus);
+            Controls.Add(btnSimpan);
+            Controls.Add(btnBatal);
+            Margin = new Padding(3, 4, 3, 4);
+            Name = "FormPenetasan";
+            StartPosition = FormStartPosition.CenterParent;
+            Text = "Form Penetasan";
+            ((System.ComponentModel.ISupportInitialize)numMenetas).EndInit();
+            ((System.ComponentModel.ISupportInitialize)numGagal).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
         }
     }
 }

@@ -138,7 +138,7 @@
             AutoScaleDimensions = new SizeF(11F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoSize = true;
-            ClientSize = new Size(1350, 603);
+            ClientSize = new Size(894, 644);
             Controls.Add(btn_batal);
             Controls.Add(btn_simpan);
             Controls.Add(cmb_betina);
@@ -150,8 +150,7 @@
             Controls.Add(lbl_judul);
             Font = new Font("Lucida Fax", 10.2F, FontStyle.Bold);
             Margin = new Padding(4, 3, 4, 3);
-            MaximumSize = new Size(1643, 750);
-            MinimumSize = new Size(1368, 650);
+            MaximumSize = new Size(1200, 750);
             Name = "FormPerkawinan";
             Text = "FormPerkawinan";
             ResumeLayout(false);

@@ -75,7 +75,7 @@
             // btn_pencarian
             // 
             btn_pencarian.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Bold);
-            btn_pencarian.Location = new Point(827, 82);
+            btn_pencarian.Location = new Point(759, 87);
             btn_pencarian.Name = "btn_pencarian";
             btn_pencarian.Size = new Size(94, 29);
             btn_pencarian.TabIndex = 3;
@@ -85,7 +85,7 @@
             // btn_ubah
             // 
             btn_ubah.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Bold);
-            btn_ubah.Location = new Point(827, 162);
+            btn_ubah.Location = new Point(759, 162);
             btn_ubah.Name = "btn_ubah";
             btn_ubah.Size = new Size(94, 29);
             btn_ubah.TabIndex = 4;
@@ -96,7 +96,7 @@
             // 
             btn_tambah_perkawinan.AutoSize = true;
             btn_tambah_perkawinan.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Bold);
-            btn_tambah_perkawinan.Location = new Point(581, 162);
+            btn_tambah_perkawinan.Location = new Point(513, 161);
             btn_tambah_perkawinan.Name = "btn_tambah_perkawinan";
             btn_tambah_perkawinan.Size = new Size(187, 30);
             btn_tambah_perkawinan.TabIndex = 5;
@@ -153,7 +153,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(982, 603);
+            ClientSize = new Size(894, 644);
             Controls.Add(dg_perkawinan);
             Controls.Add(btn_tambah_perkawinan);
             Controls.Add(btn_ubah);
@@ -161,8 +161,6 @@
             Controls.Add(tb_pencarian);
             Controls.Add(lbl_pencarian);
             Controls.Add(lbl_judul);
-            MaximumSize = new Size(1200, 750);
-            MinimumSize = new Size(1000, 650);
             Name = "UcPerkawinan";
             Text = "UcPerkawinan";
             ((System.ComponentModel.ISupportInitialize)dg_perkawinan).EndInit();
