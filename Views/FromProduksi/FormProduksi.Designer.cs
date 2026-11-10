@@ -1,4 +1,4 @@
-﻿namespace Proyek_PBO___Si_Mewah.Views.FromProduksi
+﻿namespace SiMewah.Views.FormProduksi
 {
     partial class FormProduksi
     {
@@ -115,8 +115,7 @@
             lbl_konten.Dock = DockStyle.Fill;
             lbl_konten.Font = new Font("Bodoni MT", 10F, FontStyle.Bold);
             lbl_konten.Location = new Point(0, 0);
-            lbl_konten.MaximumSize = new Size(1200, 750);
-            lbl_konten.MinimumSize = new Size(1000, 650);
+            lbl_konten.TextAlign = ContentAlignment.MiddleCenter;
             lbl_konten.Name = "lbl_konten";
             lbl_konten.Size = new Size(1000, 650);
             lbl_konten.TabIndex = 0;

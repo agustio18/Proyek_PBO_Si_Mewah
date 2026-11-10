@@ -1,4 +1,4 @@
-namespace Proyek_PBO___Si_Mewah.Repositories
+namespace SiMewah.Repositories
 {
     internal class PerawatanRepository
     {

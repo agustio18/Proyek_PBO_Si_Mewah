@@ -1,4 +1,4 @@
-namespace Proyek_PBO___Si_Mewah.Controllers
+namespace SiMewah.Controllers
 {
     internal class AuthController
     {

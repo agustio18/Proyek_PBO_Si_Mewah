@@ -8,7 +8,7 @@ using System.Windows.Forms;
 
 namespace SiMewah.Views.Produksi.Telur
 {
-    public partial class UcTelur : Form
+    public partial class UcTelur : UserControl
     {
         public UcTelur()
         {

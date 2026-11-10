@@ -153,7 +153,6 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(894, 644);
             Controls.Add(dg_perkawinan);
             Controls.Add(btn_tambah_perkawinan);
             Controls.Add(btn_ubah);
@@ -162,7 +161,7 @@
             Controls.Add(lbl_pencarian);
             Controls.Add(lbl_judul);
             Name = "UcPerkawinan";
-            Text = "UcPerkawinan";
+            Size = new Size(894, 644);
             ((System.ComponentModel.ISupportInitialize)dg_perkawinan).EndInit();
             ResumeLayout(false);
             PerformLayout();

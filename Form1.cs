@@ -1,4 +1,4 @@
-namespace Proyek_PBO___Si_Mewah
+namespace SiMewah
 {
     public partial class Form1 : Form
     {

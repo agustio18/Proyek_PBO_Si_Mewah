@@ -8,7 +8,7 @@ using System.Windows.Forms;
 
 namespace SiMewah.Views.Produksi.Penetasan
 {
-    public partial class UcPenetasan : Form
+    public partial class UcPenetasan : UserControl
     {
         public UcPenetasan()
         {

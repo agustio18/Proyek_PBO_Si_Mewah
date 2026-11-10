@@ -8,7 +8,7 @@ using System.Windows.Forms;
 
 namespace SiMewah.Views.Produksi.Perkawinan
 {
-    public partial class UcPerkawinan : Form
+    public partial class UcPerkawinan : UserControl
     {
         public UcPerkawinan()
         {
