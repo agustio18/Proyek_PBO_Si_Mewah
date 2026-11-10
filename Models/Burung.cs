@@ -6,7 +6,7 @@ namespace SiMewah.Models
     {
         private string _jenisKelamin = "";
         private string _status = "aktif";
-        private DateTime _tanggalLahir;
+        private DateOnly _tanggalLahir;
 
         public Guid IdBurung { get; set; } = Guid.NewGuid();
         public string KodeBurung { get; set; } = "";
@@ -24,12 +24,12 @@ namespace SiMewah.Models
             }
         }
 
-        public DateTime TanggalLahir
+        public DateOnly TanggalLahir
         {
             get => _tanggalLahir;
             set
             {
-                if (value > DateTime.Today)
+                if (value > DateOnly.FromDateTime(DateTime.Today))
                     throw new ArgumentException(
                         "Tanggal lahir tidak boleh melebihi hari ini.", nameof(TanggalLahir));
                 _tanggalLahir = value;
@@ -52,7 +52,7 @@ namespace SiMewah.Models
         {
         }
 
-        public Burung(string kodeBurung, string jenisKelamin, DateTime tanggalLahir, Guid idKandang)
+        public Burung(string kodeBurung, string jenisKelamin, DateOnly tanggalLahir, Guid idKandang)
         {
             KodeBurung = kodeBurung;
             JenisKelamin = jenisKelamin;
@@ -61,7 +61,7 @@ namespace SiMewah.Models
         }
 
         public Burung(Guid idBurung, string kodeBurung, string jenisKelamin,
-                      DateTime tanggalLahir, string status, Guid idKandang)
+                      DateOnly tanggalLahir, string status, Guid idKandang)
         {
             IdBurung = idBurung;
             KodeBurung = kodeBurung;

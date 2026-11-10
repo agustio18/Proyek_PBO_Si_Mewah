@@ -12,20 +12,14 @@
   <ItemGroup>
     <Compile Remove="Helpers\**" />
     <Compile Remove="Views\Auth\**" />
-    <Compile Remove="Views\Burung\**" />
-    <Compile Remove="Views\Kandang\**" />
     <Compile Remove="Views\Perawatan\**" />
     <Compile Remove="Views\Produksi\**" />
     <EmbeddedResource Remove="Helpers\**" />
     <EmbeddedResource Remove="Views\Auth\**" />
-    <EmbeddedResource Remove="Views\Burung\**" />
-    <EmbeddedResource Remove="Views\Kandang\**" />
     <EmbeddedResource Remove="Views\Perawatan\**" />
     <EmbeddedResource Remove="Views\Produksi\**" />
     <None Remove="Helpers\**" />
     <None Remove="Views\Auth\**" />
-    <None Remove="Views\Burung\**" />
-    <None Remove="Views\Kandang\**" />
     <None Remove="Views\Perawatan\**" />
     <None Remove="Views\Produksi\**" />
   </ItemGroup>
