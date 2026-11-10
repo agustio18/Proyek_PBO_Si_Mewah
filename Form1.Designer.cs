@@ -32,6 +32,7 @@
             lblDeskripsi = new Label();
             btnBurung = new Button();
             btnProduksi = new Button();
+            btnKandang = new Button();
             SuspendLayout();
             // 
             // lblJudul
@@ -60,8 +61,9 @@
             btnBurung.Name = "btnBurung";
             btnBurung.Size = new Size(160, 64);
             btnBurung.TabIndex = 2;
-            btnBurung.Text = "Data Burung dan Kandang";
+            btnBurung.Text = "Data Burung";
             btnBurung.UseVisualStyleBackColor = true;
+            btnBurung.Click += btnBurung_Click;
             // 
             // btnProduksi
             // 
@@ -73,11 +75,22 @@
             btnProduksi.UseVisualStyleBackColor = true;
             btnProduksi.Click += btnProduksi_Click;
             // 
+            // btnKandang
+            // 
+            btnKandang.Location = new Point(133, 296);
+            btnKandang.Name = "btnKandang";
+            btnKandang.Size = new Size(156, 61);
+            btnKandang.TabIndex = 4;
+            btnKandang.Text = "Data Kandang";
+            btnKandang.UseVisualStyleBackColor = true;
+            btnKandang.Click += btnKandang_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(btnKandang);
             Controls.Add(btnProduksi);
             Controls.Add(btnBurung);
             Controls.Add(lblDeskripsi);
@@ -94,5 +107,6 @@
         private Label lblDeskripsi;
         private Button btnBurung;
         private Button btnProduksi;
+        private Button btnKandang;
     }
 }

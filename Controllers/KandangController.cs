@@ -1,11 +1,8 @@
-<<<<<<< HEAD
 using System;
 using System.Collections.Generic;
 using SiMewah.Models;
 using SiMewah.Repositories;
 
-=======
->>>>>>> b942a07 (update Form produksi)
 namespace SiMewah.Controllers
 {
     public class KandangController
