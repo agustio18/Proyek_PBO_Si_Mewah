@@ -19,16 +19,14 @@ namespace SiMewah
 
         private void btnBurung_Click(object sender, EventArgs e)
         {
-            FormBurung form = new FormBurung();
-            form.Show();
-            this.Hide();
+            using UcBurung form = new UcBurung();
+            form.ShowDialog(this);
         }
 
         private void btnKandang_Click(object sender, EventArgs e)
         {
-            FormKandang form = new FormKandang();
-            form.Show();
-            this.Hide();
+            using UcKandang form = new UcKandang();
+            form.ShowDialog(this);
         }
     }
 }

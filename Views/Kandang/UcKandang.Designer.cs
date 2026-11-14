@@ -116,6 +116,10 @@ namespace SiMewah.Views.Kandang
                 System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvKandang.MultiSelect = false;
             this.dgvKandang.Size = new System.Drawing.Size(700, 350);
+            this.dgvKandang.Anchor = System.Windows.Forms.AnchorStyles.Top
+                | System.Windows.Forms.AnchorStyles.Left
+                | System.Windows.Forms.AnchorStyles.Right
+                | System.Windows.Forms.AnchorStyles.Bottom;
             this.dgvKandang.TabIndex = 6;
 
             // UcKandang

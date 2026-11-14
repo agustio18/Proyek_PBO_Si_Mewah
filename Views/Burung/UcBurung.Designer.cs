@@ -131,6 +131,10 @@ namespace SiMewah.Views.Burung
                 System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvBurung.MultiSelect = false;
             this.dgvBurung.Size = new System.Drawing.Size(820, 350);
+            this.dgvBurung.Anchor = System.Windows.Forms.AnchorStyles.Top
+                | System.Windows.Forms.AnchorStyles.Left
+                | System.Windows.Forms.AnchorStyles.Right
+                | System.Windows.Forms.AnchorStyles.Bottom;
             this.dgvBurung.TabIndex = 6;
 
             // UcBurung
