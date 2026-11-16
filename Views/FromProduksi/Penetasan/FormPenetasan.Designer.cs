@@ -151,24 +151,6 @@ namespace SiMewah.Views.Produksi.Penetasan
             numGagal.Size = new Size(434, 27);
             numGagal.TabIndex = 10;
             // 
-            // lblStatus
-            // 
-            lblStatus.AutoSize = true;
-            lblStatus.Location = new Point(29, 487);
-            lblStatus.Name = "lblStatus";
-            lblStatus.Size = new Size(49, 20);
-            lblStatus.TabIndex = 11;
-            lblStatus.Text = "Status";
-            // 
-            // txtStatus
-            // 
-            txtStatus.Location = new Point(29, 513);
-            txtStatus.Margin = new Padding(3, 4, 3, 4);
-            txtStatus.Name = "txtStatus";
-            txtStatus.ReadOnly = true;
-            txtStatus.Size = new Size(434, 27);
-            txtStatus.TabIndex = 12;
-            // 
             // btnSimpan
             // 
             btnSimpan.Location = new Point(360, 580);

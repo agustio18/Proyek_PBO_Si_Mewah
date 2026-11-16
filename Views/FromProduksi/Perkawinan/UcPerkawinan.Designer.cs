@@ -39,6 +39,8 @@
             col_id = new DataGridViewTextBoxColumn();
             col_jantan = new DataGridViewTextBoxColumn();
             col_betina = new DataGridViewTextBoxColumn();
+            col_id_jantan = new DataGridViewTextBoxColumn();
+            col_id_betina = new DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)dg_perkawinan).BeginInit();
             SuspendLayout();
             // 
@@ -52,7 +54,6 @@
             lbl_judul.Size = new Size(193, 26);
             lbl_judul.TabIndex = 0;
             lbl_judul.Text = "Data Perkawinan";
-            lbl_judul.Click += label1_Click;
             // 
             // lbl_pencarian
             // 
@@ -110,7 +111,7 @@
             dg_perkawinan.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dg_perkawinan.BackgroundColor = SystemColors.ControlLight;
             dg_perkawinan.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dg_perkawinan.Columns.AddRange(new DataGridViewColumn[] { col_tanggal, col_id, col_jantan, col_betina });
+            dg_perkawinan.Columns.AddRange(new DataGridViewColumn[] { col_tanggal, col_id, col_jantan, col_betina, col_id_jantan, col_id_betina });
             dg_perkawinan.Location = new Point(0, 239);
             dg_perkawinan.MultiSelect = false;
             dg_perkawinan.Name = "dg_perkawinan";
@@ -149,6 +150,22 @@
             col_betina.Name = "col_betina";
             col_betina.ReadOnly = true;
             // 
+            // col_id_jantan
+            // 
+            col_id_jantan.HeaderText = "ID Jantan";
+            col_id_jantan.MinimumWidth = 6;
+            col_id_jantan.Name = "col_id_jantan";
+            col_id_jantan.ReadOnly = true;
+            col_id_jantan.Visible = false;
+            // 
+            // col_id_betina
+            // 
+            col_id_betina.HeaderText = "ID Betina";
+            col_id_betina.MinimumWidth = 6;
+            col_id_betina.Name = "col_id_betina";
+            col_id_betina.ReadOnly = true;
+            col_id_betina.Visible = false;
+            // 
             // UcPerkawinan
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -162,6 +179,7 @@
             Controls.Add(lbl_judul);
             Name = "UcPerkawinan";
             Size = new Size(894, 644);
+            Load += UcPerkawinan_Load;
             ((System.ComponentModel.ISupportInitialize)dg_perkawinan).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -180,5 +198,7 @@
         private DataGridViewTextBoxColumn col_id;
         private DataGridViewTextBoxColumn col_jantan;
         private DataGridViewTextBoxColumn col_betina;
+        private DataGridViewTextBoxColumn col_id_jantan;
+        private DataGridViewTextBoxColumn col_id_betina;
     }
 }
