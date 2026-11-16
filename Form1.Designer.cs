@@ -33,6 +33,7 @@
             btnBurung = new Button();
             btnProduksi = new Button();
             btnKandang = new Button();
+            btnPerawatan = new Button();
             SuspendLayout();
             // 
             // lblJudul
@@ -85,11 +86,22 @@
             btnKandang.UseVisualStyleBackColor = true;
             btnKandang.Click += btnKandang_Click;
             // 
+            // btnPerawatan
+            // 
+            btnPerawatan.Location = new Point(410, 303);
+            btnPerawatan.Name = "btnPerawatan";
+            btnPerawatan.Size = new Size(145, 54);
+            btnPerawatan.TabIndex = 5;
+            btnPerawatan.Text = "Data Perawatan";
+            btnPerawatan.UseVisualStyleBackColor = true;
+            btnPerawatan.Click += btnPerawatan_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(btnPerawatan);
             Controls.Add(btnKandang);
             Controls.Add(btnProduksi);
             Controls.Add(btnBurung);
@@ -108,5 +120,6 @@
         private Button btnBurung;
         private Button btnProduksi;
         private Button btnKandang;
+        private Button btnPerawatan;
     }
 }

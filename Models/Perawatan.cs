@@ -1,4 +1,3 @@
-
 using System;
 
 namespace SiMewah.Models
@@ -17,13 +16,30 @@ namespace SiMewah.Models
             DateOnly tanggalPerawatan,
             int jumlahPerawatan,
             Guid idBurung)
+            : this(
+                Guid.NewGuid(),
+                jenisPerawatan,
+                tanggalPerawatan,
+                jumlahPerawatan,
+                idBurung,
+                false)
         {
-            IdPerawatan = Guid.NewGuid();
+        }
+
+        public Perawatan(
+            Guid idPerawatan,
+            string jenisPerawatan,
+            DateOnly tanggalPerawatan,
+            int jumlahPerawatan,
+            Guid idBurung,
+            bool isDelete)
+        {
+            IdPerawatan = idPerawatan;
             JenisPerawatan = jenisPerawatan;
             TanggalPerawatan = tanggalPerawatan;
             JumlahPerawatan = jumlahPerawatan;
             IdBurung = idBurung;
-            IsDelete = false;
+            IsDelete = isDelete;
         }
     }
 }
