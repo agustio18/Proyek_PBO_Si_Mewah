@@ -34,15 +34,17 @@
             btnProduksi = new Button();
             btnKandang = new Button();
             btnPerawatan = new Button();
+            btnRekomendasi = new Button();
             SuspendLayout();
             // 
             // lblJudul
             // 
             lblJudul.AutoSize = true;
             lblJudul.Font = new Font("Palatino Linotype", 14F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblJudul.Location = new Point(59, 50);
+            lblJudul.Location = new Point(41, 30);
+            lblJudul.Margin = new Padding(2, 0, 2, 0);
             lblJudul.Name = "lblJudul";
-            lblJudul.Size = new Size(167, 38);
+            lblJudul.Size = new Size(115, 26);
             lblJudul.TabIndex = 0;
             lblJudul.Text = "SI MEWAH";
             // 
@@ -50,17 +52,19 @@
             // 
             lblDeskripsi.AutoSize = true;
             lblDeskripsi.Font = new Font("Palatino Linotype", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblDeskripsi.Location = new Point(59, 98);
+            lblDeskripsi.Location = new Point(41, 59);
+            lblDeskripsi.Margin = new Padding(2, 0, 2, 0);
             lblDeskripsi.Name = "lblDeskripsi";
-            lblDeskripsi.Size = new Size(634, 32);
+            lblDeskripsi.Size = new Size(433, 22);
             lblDeskripsi.TabIndex = 1;
             lblDeskripsi.Text = "Sistem Informasi Manajemen Peternakan Burung Kenari";
             // 
             // btnBurung
             // 
-            btnBurung.Location = new Point(129, 181);
+            btnBurung.Location = new Point(90, 109);
+            btnBurung.Margin = new Padding(2, 2, 2, 2);
             btnBurung.Name = "btnBurung";
-            btnBurung.Size = new Size(160, 64);
+            btnBurung.Size = new Size(112, 38);
             btnBurung.TabIndex = 2;
             btnBurung.Text = "Data Burung";
             btnBurung.UseVisualStyleBackColor = true;
@@ -68,9 +72,10 @@
             // 
             // btnProduksi
             // 
-            btnProduksi.Location = new Point(410, 184);
+            btnProduksi.Location = new Point(287, 110);
+            btnProduksi.Margin = new Padding(2, 2, 2, 2);
             btnProduksi.Name = "btnProduksi";
-            btnProduksi.Size = new Size(145, 61);
+            btnProduksi.Size = new Size(102, 37);
             btnProduksi.TabIndex = 3;
             btnProduksi.Text = "Data Produksi";
             btnProduksi.UseVisualStyleBackColor = true;
@@ -78,9 +83,10 @@
             // 
             // btnKandang
             // 
-            btnKandang.Location = new Point(133, 296);
+            btnKandang.Location = new Point(93, 178);
+            btnKandang.Margin = new Padding(2, 2, 2, 2);
             btnKandang.Name = "btnKandang";
-            btnKandang.Size = new Size(156, 61);
+            btnKandang.Size = new Size(109, 37);
             btnKandang.TabIndex = 4;
             btnKandang.Text = "Data Kandang";
             btnKandang.UseVisualStyleBackColor = true;
@@ -88,25 +94,38 @@
             // 
             // btnPerawatan
             // 
-            btnPerawatan.Location = new Point(410, 303);
+            btnPerawatan.Location = new Point(287, 182);
+            btnPerawatan.Margin = new Padding(2, 2, 2, 2);
             btnPerawatan.Name = "btnPerawatan";
-            btnPerawatan.Size = new Size(145, 54);
+            btnPerawatan.Size = new Size(102, 32);
             btnPerawatan.TabIndex = 5;
             btnPerawatan.Text = "Data Perawatan";
             btnPerawatan.UseVisualStyleBackColor = true;
             btnPerawatan.Click += btnPerawatan_Click;
             // 
+            // btnRekomendasi
+            // 
+            btnRekomendasi.Location = new Point(196, 235);
+            btnRekomendasi.Name = "btnRekomendasi";
+            btnRekomendasi.Size = new Size(98, 39);
+            btnRekomendasi.TabIndex = 6;
+            btnRekomendasi.Text = "Rekomendasi";
+            btnRekomendasi.UseVisualStyleBackColor = true;
+            btnRekomendasi.Click += btnRekomendasi_Click;
+            // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(579, 318);
+            Controls.Add(btnRekomendasi);
             Controls.Add(btnPerawatan);
             Controls.Add(btnKandang);
             Controls.Add(btnProduksi);
             Controls.Add(btnBurung);
             Controls.Add(lblDeskripsi);
             Controls.Add(lblJudul);
+            Margin = new Padding(2, 2, 2, 2);
             Name = "Form1";
             Text = "Form1";
             ResumeLayout(false);
@@ -121,5 +140,6 @@
         private Button btnProduksi;
         private Button btnKandang;
         private Button btnPerawatan;
+        private Button btnRekomendasi;
     }
 }

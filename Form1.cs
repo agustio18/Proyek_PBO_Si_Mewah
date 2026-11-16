@@ -2,6 +2,7 @@ using SiMewah.Views.FormProduksi;
 using SiMewah.Views.Burung;
 using SiMewah.Views.Kandang;
 using SiMewah.Views.Perawatan;
+using SiMewah.Views.Rekomendasi;
 namespace SiMewah
 {
     public partial class Form1 : Form
@@ -33,6 +34,12 @@ namespace SiMewah
         private void btnPerawatan_Click(object sender, EventArgs e)
         {
             using UcPerawatan form = new UcPerawatan();
+            form.ShowDialog(this);
+        }
+
+        private void btnRekomendasi_Click(object sender, EventArgs e)
+        {
+            using UcRekomendasi form = new UcRekomendasi();
             form.ShowDialog(this);
         }
     }
