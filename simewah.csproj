@@ -22,7 +22,16 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Data\" />
+    <None Remove="Data\auth.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Data\auth.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="Repositories\Interfaces\" />
     <Folder Include="Resources\" />
   </ItemGroup>

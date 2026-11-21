@@ -11,11 +11,12 @@ namespace SiMewah
         {
             InitializeComponent();
         }
-
         private void btnProduksi_Click(object sender, EventArgs e)
         {
             FormProduksi form = new FormProduksi();
-            form.Show();
+
+            form.Show(this);
+
             this.Hide();
         }
 

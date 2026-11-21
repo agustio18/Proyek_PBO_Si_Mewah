@@ -96,7 +96,7 @@
             // cmb_jantan
             // 
             cmb_jantan.FormattingEnabled = true;
-            cmb_jantan.Location = new Point(21, 300);
+            cmb_jantan.Location = new Point(21, 200);
             cmb_jantan.Margin = new Padding(4, 3, 4, 3);
             cmb_jantan.Name = "cmb_jantan";
             cmb_jantan.Size = new Size(206, 28);
@@ -105,7 +105,7 @@
             // cmb_betina
             // 
             cmb_betina.FormattingEnabled = true;
-            cmb_betina.Location = new Point(21, 200);
+            cmb_betina.Location = new Point(21, 300);
             cmb_betina.Margin = new Padding(4, 3, 4, 3);
             cmb_betina.Name = "cmb_betina";
             cmb_betina.Size = new Size(206, 28);

@@ -1,20 +1,24 @@
-using SiMewah;
-using SiMewah.Views.FormProduksi;
+
+using SiMewah.Views;
 
 namespace SiMewah
 {
     internal static class Program
     {
-        /// <summary>
-        ///  The main entry point for the application.
-        /// </summary>
         [STAThread]
         static void Main()
         {
-            // To customize application configuration such as set high DPI settings or default font,
-            // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new Form1());
+
+            // Tampilkan Form Login terlebih dahulu
+            using (FormLogin login = new FormLogin())
+            {
+                // Jika login berhasil, tampilkan beranda
+                if (login.ShowDialog() == DialogResult.OK)
+                {
+                    Application.Run(new Form1());
+                }
+            }
         }
     }
 }
