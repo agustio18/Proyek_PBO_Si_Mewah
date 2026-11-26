@@ -31,153 +31,210 @@ namespace SiMewah.Views.Burung
 
         private void InitializeComponent()
         {
-            this.lblJudul = new System.Windows.Forms.Label();
-            this.lblKode = new System.Windows.Forms.Label();
-            this.txtKode = new System.Windows.Forms.TextBox();
-            this.lblJenisKelamin = new System.Windows.Forms.Label();
-            this.cmbJenisKelamin = new System.Windows.Forms.ComboBox();
-            this.lblTanggalLahir = new System.Windows.Forms.Label();
-            this.dtpTanggalLahir = new System.Windows.Forms.DateTimePicker();
-            this.lblStatus = new System.Windows.Forms.Label();
-            this.cmbStatus = new System.Windows.Forms.ComboBox();
-            this.lblKandang = new System.Windows.Forms.Label();
-            this.cmbKandang = new System.Windows.Forms.ComboBox();
-            this.btnSimpan = new System.Windows.Forms.Button();
-            this.btnBatal = new System.Windows.Forms.Button();
-
-            this.SuspendLayout();
-
+            lblJudul = new Label();
+            lblKode = new Label();
+            txtKode = new TextBox();
+            lblJenisKelamin = new Label();
+            cmbJenisKelamin = new ComboBox();
+            lblTanggalLahir = new Label();
+            dtpTanggalLahir = new DateTimePicker();
+            lblStatus = new Label();
+            cmbStatus = new ComboBox();
+            lblKandang = new Label();
+            cmbKandang = new ComboBox();
+            btnSimpan = new Button();
+            btnBatal = new Button();
+            SuspendLayout();
+            // 
             // lblJudul
-            this.lblJudul.AutoSize = true;
-            this.lblJudul.Font = new System.Drawing.Font(
-                "Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.lblJudul.Location = new System.Drawing.Point(25, 20);
-            this.lblJudul.Name = "lblJudul";
-            this.lblJudul.Size = new System.Drawing.Size(108, 21);
-            this.lblJudul.TabIndex = 0;
-            this.lblJudul.Text = "Form Burung";
-
+            // 
+            lblJudul.AutoSize = true;
+            lblJudul.BackColor = Color.Transparent;
+            lblJudul.Font = new Font("Segoe UI", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblJudul.ForeColor = Color.FromArgb(53, 92, 69);
+            lblJudul.Location = new Point(35, 25);
+            lblJudul.Margin = new Padding(4, 0, 4, 0);
+            lblJudul.Name = "lblJudul";
+            lblJudul.Size = new Size(243, 48);
+            lblJudul.TabIndex = 0;
+            lblJudul.Text = "Form Burung";
+            // 
             // lblKode
-            this.lblKode.AutoSize = true;
-            this.lblKode.Location = new System.Drawing.Point(25, 70);
-            this.lblKode.Name = "lblKode";
-            this.lblKode.Size = new System.Drawing.Size(70, 15);
-            this.lblKode.TabIndex = 1;
-            this.lblKode.Text = "Kode Burung";
-
+            // 
+            lblKode.AutoSize = true;
+            lblKode.BackColor = Color.Transparent;
+            lblKode.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblKode.ForeColor = Color.FromArgb(48, 56, 50);
+            lblKode.Location = new Point(35, 100);
+            lblKode.Margin = new Padding(4, 0, 4, 0);
+            lblKode.Name = "lblKode";
+            lblKode.Size = new Size(124, 25);
+            lblKode.TabIndex = 1;
+            lblKode.Text = "Kode Burung";
+            // 
             // txtKode
-            this.txtKode.Location = new System.Drawing.Point(25, 90);
-            this.txtKode.Name = "txtKode";
-            this.txtKode.Size = new System.Drawing.Size(380, 23);
-            this.txtKode.TabIndex = 2;
-
+            // 
+            txtKode.BackColor = Color.White;
+            txtKode.ForeColor = Color.FromArgb(48, 56, 50);
+            txtKode.Location = new Point(35, 125);
+            txtKode.Margin = new Padding(4, 5, 4, 5);
+            txtKode.Name = "txtKode";
+            txtKode.Size = new Size(480, 31);
+            txtKode.TabIndex = 2;
+            // 
             // lblJenisKelamin
-            this.lblJenisKelamin.AutoSize = true;
-            this.lblJenisKelamin.Location = new System.Drawing.Point(25, 135);
-            this.lblJenisKelamin.Name = "lblJenisKelamin";
-            this.lblJenisKelamin.Size = new System.Drawing.Size(80, 15);
-            this.lblJenisKelamin.TabIndex = 3;
-            this.lblJenisKelamin.Text = "Jenis Kelamin";
-
+            // 
+            lblJenisKelamin.AutoSize = true;
+            lblJenisKelamin.BackColor = Color.Transparent;
+            lblJenisKelamin.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblJenisKelamin.ForeColor = Color.FromArgb(48, 56, 50);
+            lblJenisKelamin.Location = new Point(35, 190);
+            lblJenisKelamin.Margin = new Padding(4, 0, 4, 0);
+            lblJenisKelamin.Name = "lblJenisKelamin";
+            lblJenisKelamin.Size = new Size(128, 25);
+            lblJenisKelamin.TabIndex = 3;
+            lblJenisKelamin.Text = "Jenis Kelamin";
+            // 
             // cmbJenisKelamin
-            this.cmbJenisKelamin.DropDownStyle =
-                System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbJenisKelamin.FormattingEnabled = true;
-            this.cmbJenisKelamin.Location = new System.Drawing.Point(25, 155);
-            this.cmbJenisKelamin.Name = "cmbJenisKelamin";
-            this.cmbJenisKelamin.Size = new System.Drawing.Size(380, 23);
-            this.cmbJenisKelamin.TabIndex = 4;
-
+            // 
+            cmbJenisKelamin.BackColor = Color.White;
+            cmbJenisKelamin.DropDownStyle = ComboBoxStyle.DropDownList;
+            cmbJenisKelamin.ForeColor = Color.FromArgb(48, 56, 50);
+            cmbJenisKelamin.FormattingEnabled = true;
+            cmbJenisKelamin.Location = new Point(35, 215);
+            cmbJenisKelamin.Margin = new Padding(4, 5, 4, 5);
+            cmbJenisKelamin.Name = "cmbJenisKelamin";
+            cmbJenisKelamin.Size = new Size(480, 33);
+            cmbJenisKelamin.TabIndex = 4;
+            // 
             // lblTanggalLahir
-            this.lblTanggalLahir.AutoSize = true;
-            this.lblTanggalLahir.Location = new System.Drawing.Point(25, 200);
-            this.lblTanggalLahir.Name = "lblTanggalLahir";
-            this.lblTanggalLahir.Size = new System.Drawing.Size(78, 15);
-            this.lblTanggalLahir.TabIndex = 5;
-            this.lblTanggalLahir.Text = "Tanggal Lahir";
-
+            // 
+            lblTanggalLahir.AutoSize = true;
+            lblTanggalLahir.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblTanggalLahir.ForeColor = Color.FromArgb(48, 56, 50);
+            lblTanggalLahir.Location = new Point(35, 280);
+            lblTanggalLahir.Margin = new Padding(4, 0, 4, 0);
+            lblTanggalLahir.Name = "lblTanggalLahir";
+            lblTanggalLahir.Size = new Size(126, 25);
+            lblTanggalLahir.TabIndex = 5;
+            lblTanggalLahir.Text = "Tanggal Lahir";
+            // 
             // dtpTanggalLahir
-            this.dtpTanggalLahir.Format =
-                System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpTanggalLahir.Location = new System.Drawing.Point(25, 220);
-            this.dtpTanggalLahir.Name = "dtpTanggalLahir";
-            this.dtpTanggalLahir.Size = new System.Drawing.Size(380, 23);
-            this.dtpTanggalLahir.TabIndex = 6;
-
+            // 
+            dtpTanggalLahir.Format = DateTimePickerFormat.Short;
+            dtpTanggalLahir.Location = new Point(35, 305);
+            dtpTanggalLahir.Margin = new Padding(4, 5, 4, 5);
+            dtpTanggalLahir.Name = "dtpTanggalLahir";
+            dtpTanggalLahir.Size = new Size(480, 31);
+            dtpTanggalLahir.TabIndex = 6;
+            // 
             // lblStatus
-            this.lblStatus.AutoSize = true;
-            this.lblStatus.Location = new System.Drawing.Point(25, 265);
-            this.lblStatus.Name = "lblStatus";
-            this.lblStatus.Size = new System.Drawing.Size(39, 15);
-            this.lblStatus.TabIndex = 7;
-            this.lblStatus.Text = "Status";
-
+            // 
+            lblStatus.AutoSize = true;
+            lblStatus.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblStatus.ForeColor = Color.FromArgb(48, 56, 50);
+            lblStatus.Location = new Point(565, 100);
+            lblStatus.Margin = new Padding(4, 0, 4, 0);
+            lblStatus.Name = "lblStatus";
+            lblStatus.Size = new Size(65, 25);
+            lblStatus.TabIndex = 7;
+            lblStatus.Text = "Status";
+            // 
             // cmbStatus
-            this.cmbStatus.DropDownStyle =
-                System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbStatus.FormattingEnabled = true;
-            this.cmbStatus.Location = new System.Drawing.Point(25, 285);
-            this.cmbStatus.Name = "cmbStatus";
-            this.cmbStatus.Size = new System.Drawing.Size(380, 23);
-            this.cmbStatus.TabIndex = 8;
-
+            // 
+            cmbStatus.BackColor = Color.White;
+            cmbStatus.DropDownStyle = ComboBoxStyle.DropDownList;
+            cmbStatus.ForeColor = Color.FromArgb(48, 56, 50);
+            cmbStatus.FormattingEnabled = true;
+            cmbStatus.Location = new Point(565, 125);
+            cmbStatus.Margin = new Padding(4, 5, 4, 5);
+            cmbStatus.Name = "cmbStatus";
+            cmbStatus.Size = new Size(480, 33);
+            cmbStatus.TabIndex = 8;
+            // 
             // lblKandang
-            this.lblKandang.AutoSize = true;
-            this.lblKandang.Location = new System.Drawing.Point(25, 330);
-            this.lblKandang.Name = "lblKandang";
-            this.lblKandang.Size = new System.Drawing.Size(55, 15);
-            this.lblKandang.TabIndex = 9;
-            this.lblKandang.Text = "Kandang";
-
+            // 
+            lblKandang.AutoSize = true;
+            lblKandang.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblKandang.ForeColor = Color.FromArgb(48, 56, 50);
+            lblKandang.Location = new Point(569, 190);
+            lblKandang.Margin = new Padding(4, 0, 4, 0);
+            lblKandang.Name = "lblKandang";
+            lblKandang.Size = new Size(88, 25);
+            lblKandang.TabIndex = 9;
+            lblKandang.Text = "Kandang";
+            // 
             // cmbKandang
-            this.cmbKandang.DropDownStyle =
-                System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbKandang.FormattingEnabled = true;
-            this.cmbKandang.Location = new System.Drawing.Point(25, 350);
-            this.cmbKandang.Name = "cmbKandang";
-            this.cmbKandang.Size = new System.Drawing.Size(380, 23);
-            this.cmbKandang.TabIndex = 10;
-
+            // 
+            cmbKandang.BackColor = Color.White;
+            cmbKandang.DropDownStyle = ComboBoxStyle.DropDownList;
+            cmbKandang.ForeColor = Color.FromArgb(48, 56, 50);
+            cmbKandang.FormattingEnabled = true;
+            cmbKandang.Location = new Point(565, 215);
+            cmbKandang.Margin = new Padding(4, 5, 4, 5);
+            cmbKandang.Name = "cmbKandang";
+            cmbKandang.Size = new Size(480, 33);
+            cmbKandang.TabIndex = 10;
+            // 
             // btnSimpan
-            this.btnSimpan.Location = new System.Drawing.Point(315, 410);
-            this.btnSimpan.Name = "btnSimpan";
-            this.btnSimpan.Size = new System.Drawing.Size(90, 30);
-            this.btnSimpan.TabIndex = 11;
-            this.btnSimpan.Text = "Simpan";
-            this.btnSimpan.UseVisualStyleBackColor = true;
-
+            // 
+            btnSimpan.BackColor = Color.FromArgb(53, 92, 69);
+            btnSimpan.Cursor = Cursors.Hand;
+            btnSimpan.FlatAppearance.BorderSize = 0;
+            btnSimpan.FlatStyle = FlatStyle.Flat;
+            btnSimpan.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnSimpan.ForeColor = Color.White;
+            btnSimpan.Location = new Point(920, 590);
+            btnSimpan.Margin = new Padding(4, 5, 4, 5);
+            btnSimpan.Name = "btnSimpan";
+            btnSimpan.Size = new Size(120, 38);
+            btnSimpan.TabIndex = 11;
+            btnSimpan.Text = "Simpan";
+            btnSimpan.UseVisualStyleBackColor = false;
+            // 
             // btnBatal
-            this.btnBatal.Location = new System.Drawing.Point(215, 410);
-            this.btnBatal.Name = "btnBatal";
-            this.btnBatal.Size = new System.Drawing.Size(90, 30);
-            this.btnBatal.TabIndex = 12;
-            this.btnBatal.Text = "Batal";
-            this.btnBatal.UseVisualStyleBackColor = true;
-
+            // 
+            btnBatal.BackColor = Color.White;
+            btnBatal.Cursor = Cursors.Hand;
+            btnBatal.FlatAppearance.BorderSize = 0;
+            btnBatal.FlatStyle = FlatStyle.Flat;
+            btnBatal.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnBatal.ForeColor = Color.FromArgb(53, 92, 69);
+            btnBatal.Location = new Point(790, 590);
+            btnBatal.Margin = new Padding(4, 5, 4, 5);
+            btnBatal.Name = "btnBatal";
+            btnBatal.Size = new Size(120, 38);
+            btnBatal.TabIndex = 12;
+            btnBatal.Text = "Batal";
+            btnBatal.UseVisualStyleBackColor = false;
+            // 
             // FormBurung
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(450, 480);
-            this.Controls.Add(this.lblJudul);
-            this.Controls.Add(this.lblKode);
-            this.Controls.Add(this.txtKode);
-            this.Controls.Add(this.lblJenisKelamin);
-            this.Controls.Add(this.cmbJenisKelamin);
-            this.Controls.Add(this.lblTanggalLahir);
-            this.Controls.Add(this.dtpTanggalLahir);
-            this.Controls.Add(this.lblStatus);
-            this.Controls.Add(this.cmbStatus);
-            this.Controls.Add(this.lblKandang);
-            this.Controls.Add(this.cmbKandang);
-            this.Controls.Add(this.btnSimpan);
-            this.Controls.Add(this.btnBatal);
-            this.Name = "FormBurung";
-            this.StartPosition =
-                System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Form Burung";
-
-            this.ResumeLayout(false);
-            this.PerformLayout();
+            // 
+            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.FromArgb(247, 245, 237);
+            ClientSize = new Size(1078, 644);
+            Controls.Add(lblJudul);
+            Controls.Add(lblKode);
+            Controls.Add(txtKode);
+            Controls.Add(lblJenisKelamin);
+            Controls.Add(cmbJenisKelamin);
+            Controls.Add(lblTanggalLahir);
+            Controls.Add(dtpTanggalLahir);
+            Controls.Add(lblStatus);
+            Controls.Add(cmbStatus);
+            Controls.Add(lblKandang);
+            Controls.Add(cmbKandang);
+            Controls.Add(btnSimpan);
+            Controls.Add(btnBatal);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
+            Margin = new Padding(4, 5, 4, 5);
+            MaximizeBox = false;
+            Name = "FormBurung";
+            StartPosition = FormStartPosition.CenterParent;
+            Text = "Form Burung";
+            ResumeLayout(false);
+            PerformLayout();
         }
     }
 }

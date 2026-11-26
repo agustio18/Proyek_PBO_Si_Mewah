@@ -25,92 +25,132 @@ namespace SiMewah.Views.Kandang
 
         private void InitializeComponent()
         {
-            this.lblJudul = new System.Windows.Forms.Label();
-            this.lblJenis = new System.Windows.Forms.Label();
-            this.cmbJenis = new System.Windows.Forms.ComboBox();
-            this.lblKeterangan = new System.Windows.Forms.Label();
-            this.txtKeterangan = new System.Windows.Forms.TextBox();
-            this.btnSimpan = new System.Windows.Forms.Button();
-            this.btnBatal = new System.Windows.Forms.Button();
-
-            this.SuspendLayout();
-
+            lblJudul = new Label();
+            lblJenis = new Label();
+            cmbJenis = new ComboBox();
+            lblKeterangan = new Label();
+            txtKeterangan = new TextBox();
+            btnSimpan = new Button();
+            btnBatal = new Button();
+            SuspendLayout();
+            // 
             // lblJudul
-            this.lblJudul.AutoSize = true;
-            this.lblJudul.Font = new System.Drawing.Font(
-                "Segoe UI", 12F, System.Drawing.FontStyle.Bold);
-            this.lblJudul.Location = new System.Drawing.Point(25, 20);
-            this.lblJudul.Name = "lblJudul";
-            this.lblJudul.Size = new System.Drawing.Size(118, 21);
-            this.lblJudul.TabIndex = 0;
-            this.lblJudul.Text = "Form Kandang";
-
+            // 
+            lblJudul.AutoSize = true;
+            lblJudul.BackColor = Color.Transparent;
+            lblJudul.Font = new Font("Segoe UI", 22F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblJudul.ForeColor = Color.FromArgb(53, 92, 69);
+            lblJudul.Location = new Point(35, 25);
+            lblJudul.Margin = new Padding(4, 0, 4, 0);
+            lblJudul.Name = "lblJudul";
+            lblJudul.Size = new Size(330, 60);
+            lblJudul.TabIndex = 0;
+            lblJudul.Text = "Form Kandang";
+            // 
             // lblJenis
-            this.lblJenis.AutoSize = true;
-            this.lblJenis.Location = new System.Drawing.Point(25, 70);
-            this.lblJenis.Name = "lblJenis";
-            this.lblJenis.Size = new System.Drawing.Size(80, 15);
-            this.lblJenis.TabIndex = 1;
-            this.lblJenis.Text = "Jenis Kandang";
-
+            // 
+            lblJenis.AutoSize = true;
+            lblJenis.BackColor = Color.Transparent;
+            lblJenis.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblJenis.ForeColor = Color.FromArgb(48, 56, 50);
+            lblJenis.Location = new Point(35, 110);
+            lblJenis.Margin = new Padding(4, 0, 4, 0);
+            lblJenis.Name = "lblJenis";
+            lblJenis.Size = new Size(135, 25);
+            lblJenis.TabIndex = 1;
+            lblJenis.Text = "Jenis Kandang";
+            // 
             // cmbJenis
-            this.cmbJenis.DropDownStyle =
-                System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cmbJenis.FormattingEnabled = true;
-            this.cmbJenis.Location = new System.Drawing.Point(25, 90);
-            this.cmbJenis.Name = "cmbJenis";
-            this.cmbJenis.Size = new System.Drawing.Size(380, 23);
-            this.cmbJenis.TabIndex = 2;
-
+            // 
+            cmbJenis.BackColor = Color.White;
+            cmbJenis.DropDownStyle = ComboBoxStyle.DropDownList;
+            cmbJenis.ForeColor = Color.FromArgb(48, 56, 50);
+            cmbJenis.FormattingEnabled = true;
+            cmbJenis.Location = new Point(35, 135);
+            cmbJenis.Margin = new Padding(4, 5, 4, 5);
+            cmbJenis.Name = "cmbJenis";
+            cmbJenis.Size = new Size(950, 33);
+            cmbJenis.TabIndex = 2;
+            // 
             // lblKeterangan
-            this.lblKeterangan.AutoSize = true;
-            this.lblKeterangan.Location = new System.Drawing.Point(25, 135);
-            this.lblKeterangan.Name = "lblKeterangan";
-            this.lblKeterangan.Size = new System.Drawing.Size(67, 15);
-            this.lblKeterangan.TabIndex = 3;
-            this.lblKeterangan.Text = "Keterangan";
-
+            // 
+            lblKeterangan.AutoSize = true;
+            lblKeterangan.BackColor = Color.Transparent;
+            lblKeterangan.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblKeterangan.ForeColor = Color.FromArgb(48, 56, 50);
+            lblKeterangan.Location = new Point(35, 205);
+            lblKeterangan.Margin = new Padding(4, 0, 4, 0);
+            lblKeterangan.Name = "lblKeterangan";
+            lblKeterangan.Size = new Size(111, 25);
+            lblKeterangan.TabIndex = 3;
+            lblKeterangan.Text = "Keterangan";
+            // 
             // txtKeterangan
-            this.txtKeterangan.Location = new System.Drawing.Point(25, 155);
-            this.txtKeterangan.Multiline = true;
-            this.txtKeterangan.Name = "txtKeterangan";
-            this.txtKeterangan.Size = new System.Drawing.Size(380, 80);
-            this.txtKeterangan.TabIndex = 4;
-
+            // 
+            txtKeterangan.BackColor = Color.White;
+            txtKeterangan.ForeColor = Color.FromArgb(48, 56, 50);
+            txtKeterangan.Location = new Point(35, 230);
+            txtKeterangan.Margin = new Padding(4, 5, 4, 5);
+            txtKeterangan.Multiline = true;
+            txtKeterangan.Name = "txtKeterangan";
+            txtKeterangan.ScrollBars = ScrollBars.Vertical;
+            txtKeterangan.Size = new Size(950, 180);
+            txtKeterangan.TabIndex = 4;
+            // 
             // btnSimpan
-            this.btnSimpan.Location = new System.Drawing.Point(315, 270);
-            this.btnSimpan.Name = "btnSimpan";
-            this.btnSimpan.Size = new System.Drawing.Size(90, 30);
-            this.btnSimpan.TabIndex = 5;
-            this.btnSimpan.Text = "Simpan";
-            this.btnSimpan.UseVisualStyleBackColor = true;
-
+            // 
+            btnSimpan.BackColor = Color.FromArgb(53, 92, 69);
+            btnSimpan.Cursor = Cursors.Hand;
+            btnSimpan.FlatAppearance.BorderColor = Color.FromArgb(227, 231, 225);
+            btnSimpan.FlatAppearance.BorderSize = 0;
+            btnSimpan.FlatStyle = FlatStyle.Flat;
+            btnSimpan.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnSimpan.ForeColor = Color.White;
+            btnSimpan.Location = new Point(920, 590);
+            btnSimpan.Margin = new Padding(4, 5, 4, 5);
+            btnSimpan.Name = "btnSimpan";
+            btnSimpan.Size = new Size(120, 38);
+            btnSimpan.TabIndex = 5;
+            btnSimpan.Text = "Simpan";
+            btnSimpan.UseVisualStyleBackColor = false;
+            // 
             // btnBatal
-            this.btnBatal.Location = new System.Drawing.Point(215, 270);
-            this.btnBatal.Name = "btnBatal";
-            this.btnBatal.Size = new System.Drawing.Size(90, 30);
-            this.btnBatal.TabIndex = 6;
-            this.btnBatal.Text = "Batal";
-            this.btnBatal.UseVisualStyleBackColor = true;
-
+            // 
+            btnBatal.BackColor = Color.White;
+            btnBatal.Cursor = Cursors.Hand;
+            btnBatal.FlatAppearance.BorderColor = Color.FromArgb(227, 231, 225);
+            btnBatal.FlatStyle = FlatStyle.Flat;
+            btnBatal.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnBatal.ForeColor = Color.FromArgb(53, 92, 69);
+            btnBatal.Location = new Point(790, 590);
+            btnBatal.Margin = new Padding(4, 5, 4, 5);
+            btnBatal.Name = "btnBatal";
+            btnBatal.Size = new Size(120, 38);
+            btnBatal.TabIndex = 6;
+            btnBatal.Text = "Batal";
+            btnBatal.UseVisualStyleBackColor = false;
+            // 
             // FormKandang
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(450, 340);
-            this.Controls.Add(this.lblJudul);
-            this.Controls.Add(this.lblJenis);
-            this.Controls.Add(this.cmbJenis);
-            this.Controls.Add(this.lblKeterangan);
-            this.Controls.Add(this.txtKeterangan);
-            this.Controls.Add(this.btnSimpan);
-            this.Controls.Add(this.btnBatal);
-            this.Name = "FormKandang";
-            this.StartPosition =
-                System.Windows.Forms.FormStartPosition.CenterParent;
-            this.Text = "Form Kandang";
-
-            this.ResumeLayout(false);
-            this.PerformLayout();
+            // 
+            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.FromArgb(247, 245, 237);
+            ClientSize = new Size(1078, 644);
+            Controls.Add(lblJudul);
+            Controls.Add(lblJenis);
+            Controls.Add(cmbJenis);
+            Controls.Add(lblKeterangan);
+            Controls.Add(txtKeterangan);
+            Controls.Add(btnSimpan);
+            Controls.Add(btnBatal);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
+            Margin = new Padding(4, 5, 4, 5);
+            MaximizeBox = false;
+            Name = "FormKandang";
+            StartPosition = FormStartPosition.CenterParent;
+            Text = "Form Kandang";
+            ResumeLayout(false);
+            PerformLayout();
         }
     }
 }
