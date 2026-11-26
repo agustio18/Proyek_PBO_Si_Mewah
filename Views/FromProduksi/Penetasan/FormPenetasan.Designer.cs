@@ -44,138 +44,176 @@ namespace SiMewah.Views.Produksi.Penetasan
             numMenetas = new NumericUpDown();
             lblGagal = new Label();
             numGagal = new NumericUpDown();
-            lblStatus = new Label();
-            txtStatus = new TextBox();
             btnSimpan = new Button();
             btnBatal = new Button();
             ((System.ComponentModel.ISupportInitialize)numMenetas).BeginInit();
             ((System.ComponentModel.ISupportInitialize)numGagal).BeginInit();
             SuspendLayout();
+
             // 
             // lblJudul
             // 
             lblJudul.AutoSize = true;
-            lblJudul.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            lblJudul.Location = new Point(29, 27);
+            lblJudul.Font = new Font("Segoe UI", 18F, FontStyle.Bold);
+            lblJudul.ForeColor = Color.FromArgb(53, 92, 69);
+            lblJudul.Location = new Point(24, 24);
             lblJudul.Name = "lblJudul";
-            lblJudul.Size = new Size(162, 28);
+            lblJudul.Size = new Size(236, 41);
             lblJudul.TabIndex = 0;
             lblJudul.Text = "Form Penetasan";
+
             // 
             // lblTelur
             // 
             lblTelur.AutoSize = true;
-            lblTelur.Location = new Point(29, 87);
+            lblTelur.Font = new Font("Segoe UI", 9.5F, FontStyle.Bold);
+            lblTelur.ForeColor = Color.FromArgb(48, 56, 50);
+            lblTelur.Location = new Point(24, 90);
             lblTelur.Name = "lblTelur";
-            lblTelur.Size = new Size(113, 20);
+            lblTelur.Size = new Size(114, 21);
             lblTelur.TabIndex = 1;
             lblTelur.Text = "Kelompok Telur";
+
             // 
             // cmbTelur
             // 
+            cmbTelur.BackColor = Color.White;
             cmbTelur.DropDownStyle = ComboBoxStyle.DropDownList;
+            cmbTelur.Font = new Font("Segoe UI", 9.5F, FontStyle.Regular);
+            cmbTelur.ForeColor = Color.FromArgb(48, 56, 50);
             cmbTelur.FormattingEnabled = true;
-            cmbTelur.Location = new Point(29, 113);
-            cmbTelur.Margin = new Padding(3, 4, 3, 4);
+            cmbTelur.Location = new Point(24, 118);
             cmbTelur.Name = "cmbTelur";
-            cmbTelur.Size = new Size(434, 28);
+            cmbTelur.Size = new Size(480, 34);
             cmbTelur.TabIndex = 2;
+
             // 
             // lblTotalTelur
             // 
             lblTotalTelur.AutoSize = true;
-            lblTotalTelur.Location = new Point(29, 167);
+            lblTotalTelur.Font = new Font("Segoe UI", 9.5F, FontStyle.Bold);
+            lblTotalTelur.ForeColor = Color.FromArgb(48, 56, 50);
+            lblTotalTelur.Location = new Point(24, 180);
             lblTotalTelur.Name = "lblTotalTelur";
-            lblTotalTelur.Size = new Size(91, 20);
+            lblTotalTelur.Size = new Size(94, 21);
             lblTotalTelur.TabIndex = 3;
             lblTotalTelur.Text = "Jumlah Telur";
+
             // 
             // txtTotalTelur
             // 
-            txtTotalTelur.Location = new Point(29, 193);
-            txtTotalTelur.Margin = new Padding(3, 4, 3, 4);
+            txtTotalTelur.BackColor = Color.White;
+            txtTotalTelur.Font = new Font("Segoe UI", 9.5F, FontStyle.Regular);
+            txtTotalTelur.ForeColor = Color.FromArgb(48, 56, 50);
+            txtTotalTelur.Location = new Point(24, 208);
             txtTotalTelur.Name = "txtTotalTelur";
             txtTotalTelur.ReadOnly = true;
-            txtTotalTelur.Size = new Size(434, 27);
+            txtTotalTelur.Size = new Size(480, 34);
             txtTotalTelur.TabIndex = 4;
+
             // 
             // lblTanggal
             // 
             lblTanggal.AutoSize = true;
-            lblTanggal.Location = new Point(29, 247);
+            lblTanggal.Font = new Font("Segoe UI", 9.5F, FontStyle.Bold);
+            lblTanggal.ForeColor = Color.FromArgb(48, 56, 50);
+            lblTanggal.Location = new Point(24, 270);
             lblTanggal.Name = "lblTanggal";
-            lblTanggal.Size = new Size(137, 20);
+            lblTanggal.Size = new Size(139, 21);
             lblTanggal.TabIndex = 5;
             lblTanggal.Text = "Tanggal Pencatatan";
+
             // 
             // dtpTanggal
             // 
+            dtpTanggal.Font = new Font("Segoe UI", 9.5F, FontStyle.Regular);
             dtpTanggal.Format = DateTimePickerFormat.Short;
-            dtpTanggal.Location = new Point(29, 273);
-            dtpTanggal.Margin = new Padding(3, 4, 3, 4);
+            dtpTanggal.Location = new Point(24, 298);
             dtpTanggal.Name = "dtpTanggal";
-            dtpTanggal.Size = new Size(434, 27);
+            dtpTanggal.Size = new Size(480, 34);
             dtpTanggal.TabIndex = 6;
+
             // 
             // lblMenetas
             // 
             lblMenetas.AutoSize = true;
-            lblMenetas.Location = new Point(29, 327);
+            lblMenetas.Font = new Font("Segoe UI", 9.5F, FontStyle.Bold);
+            lblMenetas.ForeColor = Color.FromArgb(48, 56, 50);
+            lblMenetas.Location = new Point(24, 360);
             lblMenetas.Name = "lblMenetas";
-            lblMenetas.Size = new Size(115, 20);
+            lblMenetas.Size = new Size(117, 21);
             lblMenetas.TabIndex = 7;
             lblMenetas.Text = "Jumlah Menetas";
+
             // 
             // numMenetas
             // 
-            numMenetas.Location = new Point(29, 353);
-            numMenetas.Margin = new Padding(3, 4, 3, 4);
+            numMenetas.Font = new Font("Segoe UI", 9.5F, FontStyle.Regular);
+            numMenetas.Location = new Point(24, 388);
             numMenetas.Name = "numMenetas";
-            numMenetas.Size = new Size(434, 27);
+            numMenetas.Size = new Size(480, 34);
             numMenetas.TabIndex = 8;
+
             // 
             // lblGagal
             // 
             lblGagal.AutoSize = true;
-            lblGagal.Location = new Point(29, 407);
+            lblGagal.Font = new Font("Segoe UI", 9.5F, FontStyle.Bold);
+            lblGagal.ForeColor = Color.FromArgb(48, 56, 50);
+            lblGagal.Location = new Point(24, 450);
             lblGagal.Name = "lblGagal";
-            lblGagal.Size = new Size(98, 20);
+            lblGagal.Size = new Size(100, 21);
             lblGagal.TabIndex = 9;
             lblGagal.Text = "Jumlah Gagal";
+
             // 
             // numGagal
             // 
-            numGagal.Location = new Point(29, 433);
-            numGagal.Margin = new Padding(3, 4, 3, 4);
+            numGagal.Font = new Font("Segoe UI", 9.5F, FontStyle.Regular);
+            numGagal.Location = new Point(24, 478);
             numGagal.Name = "numGagal";
-            numGagal.Size = new Size(434, 27);
+            numGagal.Size = new Size(480, 34);
             numGagal.TabIndex = 10;
+
             // 
             // btnSimpan
             // 
-            btnSimpan.Location = new Point(360, 580);
-            btnSimpan.Margin = new Padding(3, 4, 3, 4);
+            btnSimpan.BackColor = Color.FromArgb(53, 92, 69);
+            btnSimpan.Cursor = Cursors.Hand;
+            btnSimpan.FlatAppearance.BorderSize = 0;
+            btnSimpan.FlatStyle = FlatStyle.Flat;
+            btnSimpan.Font = new Font("Segoe UI", 9.5F, FontStyle.Bold);
+            btnSimpan.ForeColor = Color.White;
+            btnSimpan.Location = new Point(956, 638);
             btnSimpan.Name = "btnSimpan";
-            btnSimpan.Size = new Size(103, 40);
-            btnSimpan.TabIndex = 13;
+            btnSimpan.Size = new Size(120, 38);
+            btnSimpan.TabIndex = 11;
             btnSimpan.Text = "Simpan";
-            btnSimpan.UseVisualStyleBackColor = true;
+            btnSimpan.UseVisualStyleBackColor = false;
+
             // 
             // btnBatal
             // 
-            btnBatal.Location = new Point(246, 580);
-            btnBatal.Margin = new Padding(3, 4, 3, 4);
+            btnBatal.BackColor = Color.White;
+            btnBatal.Cursor = Cursors.Hand;
+            btnBatal.FlatAppearance.BorderColor = Color.FromArgb(227, 231, 225);
+            btnBatal.FlatStyle = FlatStyle.Flat;
+            btnBatal.Font = new Font("Segoe UI", 9.5F, FontStyle.Bold);
+            btnBatal.ForeColor = Color.FromArgb(53, 92, 69);
+            btnBatal.Location = new Point(826, 638);
             btnBatal.Name = "btnBatal";
-            btnBatal.Size = new Size(103, 40);
-            btnBatal.TabIndex = 14;
+            btnBatal.Size = new Size(120, 38);
+            btnBatal.TabIndex = 12;
             btnBatal.Text = "Batal";
-            btnBatal.UseVisualStyleBackColor = true;
+            btnBatal.UseVisualStyleBackColor = false;
+
             // 
             // FormPenetasan
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(624, 653);
+            BackColor = Color.FromArgb(247, 245, 237);
+            ClientSize = new Size(1100, 700);
             Controls.Add(lblJudul);
             Controls.Add(lblTelur);
             Controls.Add(cmbTelur);
@@ -187,13 +225,13 @@ namespace SiMewah.Views.Produksi.Penetasan
             Controls.Add(numMenetas);
             Controls.Add(lblGagal);
             Controls.Add(numGagal);
-            Controls.Add(lblStatus);
-            Controls.Add(txtStatus);
             Controls.Add(btnSimpan);
             Controls.Add(btnBatal);
-            Margin = new Padding(3, 4, 3, 4);
+            Font = new Font("Segoe UI", 9.5F, FontStyle.Regular);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
+            MaximizeBox = false;
             Name = "FormPenetasan";
-            StartPosition = FormStartPosition.CenterParent;
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Form Penetasan";
             ((System.ComponentModel.ISupportInitialize)numMenetas).EndInit();
             ((System.ComponentModel.ISupportInitialize)numGagal).EndInit();

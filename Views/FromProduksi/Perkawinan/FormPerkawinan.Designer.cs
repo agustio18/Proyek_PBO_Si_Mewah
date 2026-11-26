@@ -1,4 +1,5 @@
-﻿namespace SiMewah.Views.Produksi.Perkawinan
+﻿
+namespace SiMewah.Views.Produksi.Perkawinan
 {
     partial class FormPerkawinan
     {
@@ -10,7 +11,6 @@
         /// <summary>
         /// Clean up any resources being used.
         /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -22,10 +22,6 @@
 
         #region Windows Form Designer generated code
 
-        /// <summary>
-        /// Required method for Designer support - do not modify
-        /// the contents of this method with the code editor.
-        /// </summary>
         private void InitializeComponent()
         {
             lbl_judul = new Label();
@@ -38,107 +34,130 @@
             btn_simpan = new Button();
             btn_batal = new Button();
             SuspendLayout();
+
             // 
             // lbl_judul
             // 
             lbl_judul.AutoSize = true;
-            lbl_judul.Dock = DockStyle.Top;
-            lbl_judul.Font = new Font("Microsoft Sans Serif", 13.2F, FontStyle.Bold);
-            lbl_judul.Location = new Point(0, 0);
-            lbl_judul.Margin = new Padding(4, 0, 4, 0);
+            lbl_judul.Font = new Font("Segoe UI", 18F, FontStyle.Bold);
+            lbl_judul.ForeColor = Color.FromArgb(53, 92, 69);
+            lbl_judul.Location = new Point(24, 24);
             lbl_judul.Name = "lbl_judul";
-            lbl_judul.Size = new Size(198, 26);
-            lbl_judul.TabIndex = 1;
+            lbl_judul.Size = new Size(258, 41);
+            lbl_judul.TabIndex = 0;
             lbl_judul.Text = "Form Perkawinan";
+
             // 
             // lbl_tanggal
             // 
             lbl_tanggal.AutoSize = true;
-            lbl_tanggal.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Bold);
-            lbl_tanggal.Location = new Point(14, 70);
-            lbl_tanggal.Margin = new Padding(4, 0, 4, 0);
+            lbl_tanggal.Font = new Font("Segoe UI", 9.5F, FontStyle.Bold);
+            lbl_tanggal.ForeColor = Color.FromArgb(48, 56, 50);
+            lbl_tanggal.Location = new Point(24, 100);
             lbl_tanggal.Name = "lbl_tanggal";
-            lbl_tanggal.Size = new Size(177, 20);
-            lbl_tanggal.TabIndex = 2;
+            lbl_tanggal.Size = new Size(166, 21);
+            lbl_tanggal.TabIndex = 1;
             lbl_tanggal.Text = "Tanggal Perkawinan";
+
             // 
             // dtp_tanggal
             // 
-            dtp_tanggal.CalendarFont = new Font("Lucida Fax", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            dtp_tanggal.Location = new Point(21, 100);
-            dtp_tanggal.Margin = new Padding(4, 3, 4, 3);
+            dtp_tanggal.Font = new Font("Segoe UI", 9.5F, FontStyle.Regular);
+            dtp_tanggal.Format = DateTimePickerFormat.Short;
+            dtp_tanggal.Location = new Point(24, 128);
             dtp_tanggal.Name = "dtp_tanggal";
-            dtp_tanggal.Size = new Size(342, 28);
-            dtp_tanggal.TabIndex = 3;
+            dtp_tanggal.Size = new Size(480, 34);
+            dtp_tanggal.TabIndex = 2;
+
             // 
             // lbl_jantan
             // 
             lbl_jantan.AutoSize = true;
-            lbl_jantan.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Bold);
-            lbl_jantan.Location = new Point(21, 170);
-            lbl_jantan.Margin = new Padding(4, 0, 4, 0);
+            lbl_jantan.Font = new Font("Segoe UI", 9.5F, FontStyle.Bold);
+            lbl_jantan.ForeColor = Color.FromArgb(48, 56, 50);
+            lbl_jantan.Location = new Point(24, 190);
             lbl_jantan.Name = "lbl_jantan";
-            lbl_jantan.Size = new Size(131, 20);
-            lbl_jantan.TabIndex = 4;
+            lbl_jantan.Size = new Size(126, 21);
+            lbl_jantan.TabIndex = 3;
             lbl_jantan.Text = "Burung Jantan";
+
+            // 
+            // cmb_jantan
+            // 
+            cmb_jantan.BackColor = Color.White;
+            cmb_jantan.DropDownStyle = ComboBoxStyle.DropDownList;
+            cmb_jantan.Font = new Font("Segoe UI", 9.5F, FontStyle.Regular);
+            cmb_jantan.ForeColor = Color.FromArgb(48, 56, 50);
+            cmb_jantan.FormattingEnabled = true;
+            cmb_jantan.Location = new Point(24, 218);
+            cmb_jantan.Name = "cmb_jantan";
+            cmb_jantan.Size = new Size(480, 34);
+            cmb_jantan.TabIndex = 4;
+
             // 
             // lbl_betina
             // 
             lbl_betina.AutoSize = true;
-            lbl_betina.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Bold);
-            lbl_betina.Location = new Point(21, 270);
-            lbl_betina.Margin = new Padding(4, 0, 4, 0);
+            lbl_betina.Font = new Font("Segoe UI", 9.5F, FontStyle.Bold);
+            lbl_betina.ForeColor = Color.FromArgb(48, 56, 50);
+            lbl_betina.Location = new Point(24, 280);
             lbl_betina.Name = "lbl_betina";
-            lbl_betina.Size = new Size(129, 20);
+            lbl_betina.Size = new Size(122, 21);
             lbl_betina.TabIndex = 5;
             lbl_betina.Text = "Burung Betina";
-            // 
-            // cmb_jantan
-            // 
-            cmb_jantan.FormattingEnabled = true;
-            cmb_jantan.Location = new Point(21, 200);
-            cmb_jantan.Margin = new Padding(4, 3, 4, 3);
-            cmb_jantan.Name = "cmb_jantan";
-            cmb_jantan.Size = new Size(206, 28);
-            cmb_jantan.TabIndex = 6;
+
             // 
             // cmb_betina
             // 
+            cmb_betina.BackColor = Color.White;
+            cmb_betina.DropDownStyle = ComboBoxStyle.DropDownList;
+            cmb_betina.Font = new Font("Segoe UI", 9.5F, FontStyle.Regular);
+            cmb_betina.ForeColor = Color.FromArgb(48, 56, 50);
             cmb_betina.FormattingEnabled = true;
-            cmb_betina.Location = new Point(21, 300);
-            cmb_betina.Margin = new Padding(4, 3, 4, 3);
+            cmb_betina.Location = new Point(24, 308);
             cmb_betina.Name = "cmb_betina";
-            cmb_betina.Size = new Size(206, 28);
-            cmb_betina.TabIndex = 7;
+            cmb_betina.Size = new Size(480, 34);
+            cmb_betina.TabIndex = 6;
+
             // 
             // btn_simpan
             // 
-            btn_simpan.Font = new Font("Lucida Fax", 10.2F, FontStyle.Bold);
-            btn_simpan.Location = new Point(860, 520);
-            btn_simpan.Margin = new Padding(4, 3, 4, 3);
+            btn_simpan.BackColor = Color.FromArgb(53, 92, 69);
+            btn_simpan.Cursor = Cursors.Hand;
+            btn_simpan.FlatAppearance.BorderSize = 0;
+            btn_simpan.FlatStyle = FlatStyle.Flat;
+            btn_simpan.Font = new Font("Segoe UI", 9.5F, FontStyle.Bold);
+            btn_simpan.ForeColor = Color.White;
+            btn_simpan.Location = new Point(956, 638);
             btn_simpan.Name = "btn_simpan";
-            btn_simpan.Size = new Size(129, 29);
-            btn_simpan.TabIndex = 8;
+            btn_simpan.Size = new Size(120, 38);
+            btn_simpan.TabIndex = 7;
             btn_simpan.Text = "Simpan";
-            btn_simpan.UseVisualStyleBackColor = true;
+            btn_simpan.UseVisualStyleBackColor = false;
+
             // 
             // btn_batal
             // 
-            btn_batal.Font = new Font("Lucida Fax", 10.2F, FontStyle.Bold);
-            btn_batal.Location = new Point(1010, 520);
-            btn_batal.Margin = new Padding(4, 3, 4, 3);
+            btn_batal.BackColor = Color.White;
+            btn_batal.Cursor = Cursors.Hand;
+            btn_batal.FlatAppearance.BorderColor = Color.FromArgb(227, 231, 225);
+            btn_batal.FlatStyle = FlatStyle.Flat;
+            btn_batal.Font = new Font("Segoe UI", 9.5F, FontStyle.Bold);
+            btn_batal.ForeColor = Color.FromArgb(53, 92, 69);
+            btn_batal.Location = new Point(826, 638);
             btn_batal.Name = "btn_batal";
-            btn_batal.Size = new Size(129, 29);
-            btn_batal.TabIndex = 9;
+            btn_batal.Size = new Size(120, 38);
+            btn_batal.TabIndex = 8;
             btn_batal.Text = "Batal";
-            btn_batal.UseVisualStyleBackColor = true;
+            btn_batal.UseVisualStyleBackColor = false;
+
             // 
             // FormPerkawinan
             // 
-            AutoScaleDimensions = new SizeF(11F, 20F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            AutoSize = true;
-            ClientSize = new Size(894, 644);
+            BackColor = Color.FromArgb(247, 245, 237);
+            ClientSize = new Size(1100, 700);
             Controls.Add(btn_batal);
             Controls.Add(btn_simpan);
             Controls.Add(cmb_betina);
@@ -148,11 +167,12 @@
             Controls.Add(dtp_tanggal);
             Controls.Add(lbl_tanggal);
             Controls.Add(lbl_judul);
-            Font = new Font("Lucida Fax", 10.2F, FontStyle.Bold);
-            Margin = new Padding(4, 3, 4, 3);
-            MaximumSize = new Size(1200, 750);
+            Font = new Font("Segoe UI", 9.5F, FontStyle.Regular);
+            FormBorderStyle = FormBorderStyle.FixedSingle;
+            MaximizeBox = false;
             Name = "FormPerkawinan";
-            Text = "FormPerkawinan";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Form Perkawinan";
             ResumeLayout(false);
             PerformLayout();
         }
